@@ -20,7 +20,6 @@ jobs:
       - uses: nipe0324/update-project-v2-item-field@v2.0.2
         with:
           project-url: https://github.com/orgs/test-org-add-project-automation/projects/1  # 프로젝트 URL로 변경
-          item-id: ${{ steps.add-to-project.outputs.itemId }}
           field-name: Status  # 프로젝트의 상태 필드 이름 (일반적으로 "Status")
           field-value: Todo   # 설정할 상태값 (정확한 이름으로 입력해야 함)
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
